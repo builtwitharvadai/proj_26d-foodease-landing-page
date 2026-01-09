@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Character encoding MUST be first -->
+  <meta charset="UTF-8">
+  
+  <!-- Viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Document title with site name -->
+  <title>FoodEase - Fast & Fresh Food Delivery | Order Online Now</title>
+  
+  <!-- Meta descriptions for SEO -->
+  <meta name="description" content="FoodEase delivers fresh, delicious meals from your favorite local restaurants. Fast delivery, easy ordering, and great food at your doorstep. Order now!">
+  <meta name="keywords" content="food delivery, online food order, restaurant delivery, fast food delivery, meal delivery service">
+  
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="FoodEase - Fast & Fresh Food Delivery">
+  <meta property="og:description" content="Order delicious meals from local restaurants with fast delivery. Fresh food at your doorstep in minutes.">
+  <meta property="og:image" content="https://foodease.example.com/images/og-image.jpg">
+  <meta property="og:url" content="https://foodease.example.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FoodEase">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FoodEase - Fast & Fresh Food Delivery">
+  <meta name="twitter:description" content="Order delicious meals from local restaurants with fast delivery.">
+  <meta name="twitter:image" content="https://foodease.example.com/images/twitter-card.jpg">
+  
+  <!-- Canonical URL to prevent duplicate content -->
+  <link rel="canonical" href="https://foodease.example.com">
+  
+  <!-- Theme color -->
+  <meta name="theme-color" content="#FF6B35" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- JSON-LD Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "FoodEase",
+    "description": "Fast and fresh food delivery service connecting customers with local restaurants",
+    "url": "https://foodease.example.com",
+    "logo": "https://foodease.example.com/images/logo.png",
+    "image": "https://foodease.example.com/images/hero-image.jpg",
+    "telephone": "+1-555-FOOD-EAT",
+    "email": "hello@foodease.example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Delivery Lane",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94102",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.7749",
+      "longitude": "-122.4194"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "23:00"
+      }
+    ],
+    "servesCuisine": [
+      "American",
+      "Italian",
+      "Chinese",
+      "Mexican",
+      "Indian",
+      "Japanese",
+      "Thai"
+    ],
+    "priceRange": "$$",
+    "acceptsReservations": "False",
+    "hasDeliveryMethod": {
+      "@type": "DeliveryMethod",
+      "name": "Home Delivery"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "San Francisco"
+      },
+      {
+        "@type": "City",
+        "name": "Oakland"
+      },
+      {
+        "@type": "City",
+        "name": "Berkeley"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "2847"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip navigation for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- Semantic header -->
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo">
+        <a href="/" aria-label="FoodEase Home">
+          <img src="/images/logo.svg" alt="FoodEase Logo" width="150" height="50">
+        </a>
+      </div>
+      
+      <nav role="navigation" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="#services" aria-label="View our services">Services</a></li>
+          <li><a href="#cuisines" aria-label="Browse cuisines">Cuisines</a></li>
+          <li><a href="#delivery-areas" aria-label="Check delivery areas">Delivery Areas</a></li>
+          <li><a href="#testimonials" aria-label="Read customer testimonials">Testimonials</a></li>
+          <li><a href="#contact" aria-label="Contact us">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="/login" class="btn-secondary" aria-label="Sign in to your account">Sign In</a>
+        <a href="/signup" class="btn-primary" aria-label="Create new account">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main content with landmark -->
+  <main id="main" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Delicious Food Delivered to Your Doorstep</h1>
+        <p class="hero-subtitle">Order from your favorite local restaurants and enjoy fresh, hot meals in minutes. Fast delivery, easy ordering, unbeatable taste.</p>
+        
+        <div class="hero-cta">
+          <form action="/search" method="GET" role="search" class="hero-search">
+            <label for="address-search" class="sr-only">Enter your delivery address</label>
+            <input 
+              type="search" 
+              id="address-search" 
+              name="address"
+              placeholder="Enter your delivery address"
+              autocomplete="street-address"
+              required
+              aria-required="true"
+              aria-label="Delivery address"
+            >
+            <button type="submit" class="btn-primary" aria-label="Find restaurants near you">
+              Find Food Near You
+            </button>
+          </form>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong aria-label="Over 500 restaurants">500+</strong>
+            <span>Restaurants</span>
+          </div>
+          <div class="stat-item">
+            <strong aria-label="Average delivery time 30 minutes">30 min</strong>
+            <span>Avg. Delivery</span>
+          </div>
+          <div class="stat-item">
+            <strong aria-label="4.8 out of 5 star rating">4.8★</strong>
+            <span>Customer Rating</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image">
+        <img 
+          src="/images/hero-food.jpg" 
+          alt="Delicious assorted meals ready for delivery"
+          loading="eager"
+          width="600"
+          height="500"
+        >
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="services-title">Why Choose FoodEase?</h2>
+          <p>We make food delivery simple, fast, and delicious</p>
+        </header>
+        
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <img src="/images/icons/fast-delivery.svg" alt="" width="64" height="64">
+            </div>
+            <h3>Lightning Fast Delivery</h3>
+            <p>Get your food delivered hot and fresh in an average of 30 minutes. Real-time tracking keeps you updated every step of the way.</p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <img src="/images/icons/restaurants.svg" alt="" width="64" height="64">
+            </div>
+            <h3>500+ Local Restaurants</h3>
+            <p>Choose from hundreds of your favorite local restaurants. From comfort food to fine dining, we've got every craving covered.</p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <img src="/images/icons/easy-ordering.svg" alt="" width="64" height="64">
+            </div>
+            <h3>Easy Online Ordering</h3>
+            <p>Browse menus, customize your order, and checkout in seconds. Save your favorites for even faster ordering next time.</p>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <img src="/images/icons/quality.svg" alt="" width="64" height="64">
+            </div>
+            <h3>Quality Guaranteed</h3>
+            <p>We partner only with top-rated restaurants and ensure every order meets our high standards. Not satisfied? We'll make it right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Cuisines Section -->
+    <section id="cuisines" class="cuisines" aria-labelledby="cuisines-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="cuisines-title">Explore Popular Cuisines</h2>
+          <p>Whatever you're craving, we deliver</p>
+        </header>
+        
+        <div class="cuisines-grid">
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/italian.jpg" 
+              alt="Italian cuisine featuring pasta and pizza"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>Italian</h3>
+            <p>Authentic pasta, pizza, and more from the best Italian restaurants in town.</p>
+            <a href="/cuisines/italian" class="btn-link" aria-label="Browse Italian restaurants">
+              Order Now →
+            </a>
+          </article>
+          
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/chinese.jpg" 
+              alt="Chinese cuisine with noodles and dumplings"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>Chinese</h3>
+            <p>From dim sum to Szechuan, enjoy the finest Chinese flavors delivered fresh.</p>
+            <a href="/cuisines/chinese" class="btn-link" aria-label="Browse Chinese restaurants">
+              Order Now →
+            </a>
+          </article>
+          
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/mexican.jpg" 
+              alt="Mexican cuisine with tacos and burritos"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>Mexican</h3>
+            <p>Spice up your day with authentic tacos, burritos, and Mexican specialties.</p>
+            <a href="/cuisines/mexican" class="btn-link" aria-label="Browse Mexican restaurants">
+              Order Now →
+            </a>
+          </article>
+          
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/indian.jpg" 
+              alt="Indian cuisine with curry and naan bread"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>Indian</h3>
+            <p>Rich curries, tandoori specialties, and aromatic biryanis from top Indian chefs.</p>
+            <a href="/cuisines/indian" class="btn-link" aria-label="Browse Indian restaurants">
+              Order Now →
+            </a>
+          </article>
+          
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/japanese.jpg" 
+              alt="Japanese cuisine with sushi and ramen"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>Japanese</h3>
+            <p>Fresh sushi, savory ramen, and authentic Japanese dishes delivered with care.</p>
+            <a href="/cuisines/japanese" class="btn-link" aria-label="Browse Japanese restaurants">
+              Order Now →
+            </a>
+          </article>
+          
+          <article class="cuisine-card">
+            <img 
+              src="/images/cuisines/american.jpg" 
+              alt="American cuisine with burgers and fries"
+              loading="lazy"
+              width="300"
+              height="200"
+            >
+            <h3>American</h3>
+            <p>Classic burgers, BBQ, and comfort food from your favorite American eateries.</p>
+            <a href="/cuisines/american" class="btn-link" aria-label="Browse American restaurants">
+              Order Now →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Delivery Areas Section -->
+    <section id="delivery-areas" class="delivery-areas" aria-labelledby="delivery-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="delivery-title">We Deliver Across the Bay Area</h2>
+          <p>Fast, reliable delivery to your neighborhood</p>
+        </header>
+        
+        <div class="areas-content">
+          <div class="areas-list">
+            <h3>Currently Serving</h3>
+            <ul role="list">
+              <li>
+                <strong>San Francisco</strong>
+                <span>Downtown, Mission, SOMA, Marina, Richmond, Sunset</span>
+              </li>
+              <li>
+                <strong>Oakland</strong>
+                <span>Downtown, Temescal, Rockridge, Lake Merritt, Fruitvale</span>
+              </li>
+              <li>
+                <strong>Berkeley</strong>
+                <span>Downtown, North Berkeley, South Berkeley, West Berkeley</span>
+              </li>
+              <li>
+                <strong>San Jose</strong>
+                <span>Downtown, Willow Glen, Almaden, Evergreen, Cambrian</span>
+              </li>
+              <li>
+                <strong>Palo Alto</strong>
+                <span>Downtown, Stanford, Midtown, South Palo Alto</span>
+              </li>
+            </ul>
+            
+            <p class="areas-note">
+              <strong>Don't see your area?</strong> We're expanding rapidly! 
+              <a href="#contact" aria-label="Request delivery in your area">Request delivery in your area</a>
+            </p>
+          </div>
+          
+          <div class="areas-map">
+            <img 
+              src="/images/delivery-map.jpg" 
+              alt="Map showing FoodEase delivery coverage across San Francisco Bay Area"
+              loading="lazy"
+              width="500"
+              height="400"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="testimonials-title">What Our Customers Say</h2>
+          <p>Join thousands of satisfied food lovers</p>
+        </header>
+        
+        <div class="testimonials-carousel" role="region" aria-label="Customer testimonials carousel">
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>"FoodEase has become my go-to for dinner after long work days. The delivery is always fast, and the food arrives hot and fresh. Love the variety of restaurants!"</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img 
+                src="/images/testimonials/sarah-m.jpg" 
+                alt=""
+                loading="lazy"
+                width="60"
+                height="60"
+              >
+              <div>
+                <cite>Sarah M.</cite>
+                <span>San Francisco, CA</span>
+              </div>
+            </footer>
+          </article>
+          
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>"The app is so easy to use, and I love being able to track my order in real-time. Customer service is excellent too - they resolved an issue within minutes!"</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img 
+                src="/images/testimonials/james-l.jpg" 
+                alt=""
+                loading="lazy"
+                width="60"
+                height="60"
+              >
+              <div>
+                <cite>James L.</cite>
+                <span>Oakland, CA</span>
+              </div>
+            </footer>
+          </article>
+          
+          <article class="testimonial-card">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <blockquote>
+              <p>"Best food delivery service I've used! Great selection of restaurants, reasonable delivery fees, and the food quality is always top-notch. Highly recommend!"</p>
+            </blockquote>
+            <footer class="testimonial-author">
+              <img 
+                src="/images/testimonials/maria-g.jpg" 
+                alt=""
+                loading="lazy"
+                width="60"
+                height="60"
+              >
+              <div>
+                <cite>Maria G.</cite>
+                <span>Berkeley, CA</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contact-title">Get in Touch</h2>
+          <p>We're here to help with any questions or concerns</p>
+        </header>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            
+            <div class="contact-item">
+              <strong>Phone</strong>
+              <a href="tel:+15553663328" aria-label="Call us at 1-555-FOOD-EAT">
+                +1 (555) FOOD-EAT
+              </a>
+            </div>
+            
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:hello@foodease.example.com" aria-label="Email us at hello@foodease.example.com">
+                hello@foodease.example.com
+              </a>
+            </div>
+            
+            <div class="contact-item">
+              <strong>Address</strong>
+              <address>
+                123 Delivery Lane<br>
+                San Francisco, CA 94102<br>
+                United States
+              </address>
+            </div>
+            
+            <div class="contact-item">
+              <strong>Hours</strong>
+              <time datetime="08:00">8:00 AM</time> - <time datetime="23:00">11:00 PM</time><br>
+              7 Days a Week
+            </div>
+            
+            <div class="social-links">
+              <h4>Follow Us</h4>
+              <ul role="list">
+                <li>
+                  <a href="https://facebook.com/foodease" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/foodease" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/foodease" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="contact-form-wrapper">
+            <h3>Send Us a Message</h3>
+            <form method="POST" action="/contact" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">
+                  Name
+                  <span aria-label="required">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name"
+                  required
+                  aria-required="true"
+                  autocomplete="name"
+                  placeholder="Your full name"
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-email">
+                  Email
+                  <span aria-label="required">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email"
+                  required
+                  aria-required="true"
+                  autocomplete="email"
+                  placeholder="your.email@example.com"
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-phone">
+                  Phone
+                </label>
+                <input 
+                  type="tel" 
+                  id="contact-phone" 
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="(555) 123-4567"
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-subject">
+                  Subject
+                  <span aria-label="required">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject"
+                  required
+                  aria-required="true"
+                  placeholder="How can we help?"
+                >
+              </div>
+              
+              <div class="form-group">
+                <label for="contact-message">
+                  Message
+                  <span aria-label="required">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  name="message"
+                  rows="5"
+                  required
+                  aria-required="true"
+                  placeholder="Tell us more about your inquiry..."
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary" aria-label="Submit contact form">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Semantic footer -->
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>FoodEase</h3>
+          <p>Delivering happiness, one meal at a time. Fresh food from your favorite local restaurants, delivered fast.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <nav aria-label="Footer navigation">
+            <ul role="list">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/restaurants">Restaurants</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <nav aria-label="Support links">
+            <ul role="list">
+              <li><a href="/help">Help Center</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/feedback">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <nav aria-label="Legal links">
+            <ul role="list">
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/cookies">Cookie Policy</a></li>
+              <li><a href="/accessibility">Accessibility</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <time datetime="2024">2024</time> FoodEase. All rights reserved.</p>
+        <p>Made with ❤️ in San Francisco</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
